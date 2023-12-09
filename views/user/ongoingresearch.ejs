@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/css/homepage.css">
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      a {
+        text-decoration: none;
+        color: rgb(39, 81, 163);
+      }
+      .list-link p {
+        line-height: 13px;
+      }
+      footer p,
+      footer h6,
+      footer div {
+        color: rgb(39, 81, 163);
+      }
+      .fa-brands {
+        height: 60px;
+      }
+      body{
+        overflow-x: hidden;
+      }
+      @media (max-width: 767px){
+       .row img{
+        width: 455px !important;
+       }
+      }
+      .wp-caption {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    }
+    .wp-caption img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+    .wp-caption:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
+    z-index: 1;
+    }
+    .wp-caption-text {
+    display: block;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding: 1em;
+    font-weight: 700;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    #carouselExampleCaptions{
+        height: 500px;
+    }
+    .carousel-item img{
+        height: 500px;
+        object-fit:cover;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <%- include('../partials/nav') %>
+    <div class="container" style="font-family: 'Poppins';">
+        <br><br><br>
+        <h2 style="font-family: 'Lora'; text-align: center; font-weight: bold;">Ongoing Researches
+            </h3>
+            <div class="row" style="padding-top: 8px;">
+                <div class="col-md-2"></div>
+                <p class="text-center col-md-8" style="color: #8d97ad; line-height: 24px; font-size: 16px;">Unveiling the
+                    Latest Breakthroughs and Discoveries. Explore our continuous
+                    pursuit of knowledge and innovation as we unravel new dimensions in the realm of research</p>
+                <div class="col-md-2"></div>
+            </div>
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-5 p-3" style=" width:600px; height: 400px;">
+                    <img src="/img/multiple-sclerosis.jpg" alt=""
+                        style="width:600px; height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <br>
+                    <h3><a href="/onresearch-mult-scle" style="text-decoration: none; color: black;">Multiple
+                            Sclerosis Research</a></h3>
+                    <br>
+                    <p> <a href="/onresearch-mult-scle" style="text-decoration: none; color: black;">The Multiple
+                            Sclerosis Research Team, the branch of the Neuromer Research Team, will bring
+                            together undergraduate, graduate and doctorate students to conduct scientific research on...
+                        </a></p>
+                    <button type="button" class="btn btn-primary"><a href="/onresearch-mult-scle"
+                            style="text-decoration: none; color: white;">Read more</a></button>
+
+                </div>
+            </div>
+            <br><br>
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-md-5">
+                    <br>
+                    <h3><a href="/onresearch-alzhe" style="text-decoration: none; color: black;">Alzheimer’s Disease
+                            Research</a></h3>
+                    <br>
+                    <p><a href="/onresearch-alzhe" style="text-decoration: none; color: black;">We aim to bring
+                            together med students who are interested in Alzheimer's disease and expand our
+                            knowledge...</a>
+                    </p>
+                    <button type="button" class="btn btn-primary"><a href="/onresearch-alzhe"
+                            style="text-decoration: none; color: white;">Read more</a></button>
+                </div>
+                <div class="col-md-1"></div>
+
+                <div class="col-md-5 p-3" style=" width:600px; height: 400px;">
+                    <img src="/img/ongo3.jpg" alt="" style="width:600px; height: 400px; object-fit: cover;">
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-5 p-3" style=" width:600px; height: 400px;">
+                    <img src="/img/ongo2.jpg" alt="" style="width:600px; height: 400px; object-fit: cover;">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <br>
+                    <h3><a href="/onresearch-spinal" style="text-decoration: none; color: black;">Spinal
+                            Neurosurgery Research</a></h3>
+                    <br>
+                    <p><a href="onresearch-spinal/" style="text-decoration: none; color: black;">Our mission is to
+                            unite passionate medical students with
+                            a shared interest in spinal neurosurgery, fostering an environment where collaborative
+                            learning expands...</a>
+                    </p>
+                    <button type="button" class="btn btn-primary"><a href="/onresearch-spinal"
+                            style="text-decoration: none; color: white;">Read more</a></button>
+
+                </div>
+            </div>
+    </div>
+    <br><br><br>
+    <%- include('../partials/footer') %>
+
+</body>
+
+</html>
