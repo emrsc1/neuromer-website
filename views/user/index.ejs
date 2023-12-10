@@ -156,106 +156,62 @@
     <div class="container">
       <br /><br /><br />
       <div id="events">
-        <h2 style="font-family: 'Lora'; text-align: center; font-weight: bold">
+        <h2 style="font-family: 'Lora'; text-align: center; font-weight: bold;">
           Upcoming Events
         </h2>
         <br />
         <div class="row col-md-12">
+          <% events.forEach(event => { %>        
+            <div class="col-md-4">
+              <a href="/<%=event.url %>" style="color:#000000" ><div
+                class="card mb-3 box-shadow"
+                style="
+                  box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2.6px;
+                  border: none;
+                "
+              >
+                <img
+                  class="card-img-top"
+                  alt=""
+                  style="height: 320px;"
+                  src="/img/<%= event.image %>"
+                  data-holder-rendered="true"
+                />
+                <div class="card-body">
+                  <p class="card-text">
+                    <%= event.title %>
+                  </p>
+                  <div class="row col-md-12">
+                    <div class="col-md-8">
+                      <div class="row">
+                        <i
+                          class="fa-regular fa-calendar col-md-2 "
+                          style="color: gray"
+                        ></i>
+                        <p class="col-md-10 text-nowrap" style="font-size: 0.9rem; color: gray">
+                          <%= event.date %>
+                        </p>
+                      </div>
+                      <div class="row">
+                        <i
+                          class="fa-regular fa-clock col-md-2"
+                          style="color: gray"
+                        ></i>
+                        <p class="col-md-10 text-nowrap" style="font-size: 0.9rem; color: gray">
+                          <%= event.time %>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 ">
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div></a>
+            </div>
+          <% }) %>
           
-          <div class="col-md-4">
-            <div
-              class="card mb-3 box-shadow"
-              style="
-                box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2.6px;
-                border: none;
-              "
-            >
-              <img
-                class="card-img-top"
-                alt=""
-                style=""
-                src="/img/event2.png"
-                data-holder-rendered="true"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  From Damascus to Gießen: A Neurology Journey with Dr. Farzat
-                  Al Chayah
-                </p>
-                <div class="row col-md-12">
-                  <div class="col-md-8">
-                    <div class="row">
-                      <i
-                        class="fa-regular fa-calendar col-md-2 "
-                        style="color: gray"
-                      ></i>
-                      <p class="col-md-10 text-nowrap" style="font-size: 0.9rem; color: gray">
-                        21 August
-                      </p>
-                    </div>
-                    <div class="row">
-                      <i
-                        class="fa-regular fa-clock col-md-2"
-                        style="color: gray"
-                      ></i>
-                      <p class="col-md-10 text-nowrap" style="font-size: 0.9rem; color: gray">
-                        8PM(GMT+3)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ">
-                    <div class="row"><h4 style="color: blue;" class="text-nowrap">FREE</h4></div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card mb-3 box-shadow"
-              style="
-                box-shadow: rgba(0, 0, 0, 0.15) 1.5px 1.5px 2.6px;
-                border: none;
-              "
-            >
-              <img
-                class="card-img-top"
-                alt=""
-                style="height: 225px; width: 100%; display: block"
-                src="/img/eventimage1.jpg"
-                data-holder-rendered="true"
-              />
-              <div class="card-body" style="height: 197px">
-                <p class="card-text">Introduction to Medical Research</p>
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="row">
-                      <i
-                        class="fa-regular fa-calendar col-md-2"
-                        style="color: gray"
-                      ></i>
-                      <p class="col-md-8 text-nowrap" style="font-size: 0.9rem; color: gray">
-                        12-13 August
-                      </p>
-                    </div>
-                    <div class="row">
-                      <i
-                        class="fa-regular fa-clock col-md-2"
-                        style="color: gray"
-                      ></i>
-                      <p class="col-md-8 text-nowrap" style="font-size: 0.9rem; color: gray">
-                        8PM(GMT+3)
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4 text-nowrap">
-                    <h4 style="color: blue; font-weight: 500">FREE</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           
           
         </div>

@@ -1,0 +1,13 @@
+<button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="border-color:#000000">
+  <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+</button>
+
+<div class="offcanvas offcanvas-start bg-primary" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <%- include('../partials/admin-menu') %>
+  </div>
+</div>

@@ -2,7 +2,9 @@ const express=require("express");
 const router=express.Router();
 const userController=require("../controllers/user");
 
-router.get("/",userController.index);
+router.get("/:slug", userController.event_details);
+
+router.get("/", userController.index);
 
 router.get("/aboutus",userController.aboutus);
 
@@ -31,5 +33,6 @@ router.get("/onresearch-mult-scle",userController.onresearch_mult_scle);
 router.get("/onresearch-alzhe",userController.onresearch_alzhe);
 
 router.get("/onresearch-spinal", userController.onresearch_spinal);
+
 
 module.exports=router;
