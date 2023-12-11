@@ -29,6 +29,9 @@
         <div class="col-md-12 mt-5">
           
           <form action="/admin/events/:id" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="eventid" value="<%= event.id %>">
+            <input type="hidden" name="url" id="" value="<%= event.url %>">
+            <input type="hidden" name="image" value="<%= event.image %>">
             <div class="row mb-3">
                         <label for="title" class="col-sm-2 col-form-label" style="font-size: 23px;margin: 0 !important;">Title</label>
                         <div class="col-sm-8">
@@ -46,7 +49,7 @@
                         <label for="image" class="col-sm-2 col-form-label" style="font-size: 23px;margin: 0 !important;">Image</label>
                         <div class="col-sm-8">
                           <img style="width: 200px;" src="/img/<%= event.image %>" alt="">
-                            <input type="file" class="form-control" id="image" name="image" value="" required>
+                            <input type="file" class="form-control" id="image" name="image">
                             
                         </div>
                     </div>

@@ -28,6 +28,21 @@
         </h2>
         <br />
         <div class="row col-md-12">
+           <% if (action != "undefined" && action=="update") { %>
+                    <div class="alert alert-success">
+                        You have successfully updated the event.
+                    </div>
+                <% } %>
+                <% if (action != "undefined" && action=="delete") { %>
+                    <div class="alert alert-success">
+                        You have successfully deleted the event.
+                    </div>
+                <% } %>
+                <% if (action != "undefined" && action=="create") { %>
+                    <div class="alert alert-success">
+                        You have successfully created the event
+                    </div>
+                <% } %>
           <% events.forEach(event => { %>
             <div class="col-md-4">
               <div
@@ -75,7 +90,7 @@
                         </div>
                         <div class="col-md-3">
 
-                          <a class="btn btn-danger m-1">Delete</a>
+                          <a class="btn btn-danger m-1" href="/admin/event-delete/<%= event.id %>">Delete</a>
                         </div>
                       </div>
                     </div>
