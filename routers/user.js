@@ -10,7 +10,10 @@ router.get("/events",userController.events);
 
 router.get("/ongoingresearch",userController.ongoingresearch)
 
+router.get("/publication/:slug",userController.publication_detail);
+
 router.get("/publication",userController.publication);
+
 
 router.get("/committee-executive",userController.committee_executive);
 

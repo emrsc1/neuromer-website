@@ -131,7 +131,7 @@
       <div class="row" style="margin-bottom: 25px">
         <% publications.forEach(publication => { %>
           <div class="col-md-4 mb-3">
-            <a id="publications" href="">
+            <a id="publications" href="/publication/<%= publication.url %>">
             <div class="card h-100" style="border: none !important;">
               <img
                 src="/img/<%= publication.image %>"
