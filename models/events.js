@@ -35,6 +35,6 @@ const Events = sequelize.define("events", {
   link:{
     type:DataTypes.TEXT,
     allowNull:false,
-  }
+  },
 });
 module.exports=Events

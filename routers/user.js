@@ -2,9 +2,7 @@ const express=require("express");
 const router=express.Router();
 const userController=require("../controllers/user");
 
-router.get("/:slug", userController.event_details);
-
-router.get("/", userController.index);
+router.get("/pdfs/:pdf",userController.pdfs);
 
 router.get("/aboutus",userController.aboutus);
 
@@ -33,6 +31,10 @@ router.get("/onresearch-mult-scle",userController.onresearch_mult_scle);
 router.get("/onresearch-alzhe",userController.onresearch_alzhe);
 
 router.get("/onresearch-spinal", userController.onresearch_spinal);
+
+router.get("/:slug", userController.event_details);
+
+router.get("/", userController.index);
 
 
 module.exports=router;
